@@ -1,0 +1,336 @@
+/* para sa lahat langz */
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 2.5;
+  background-color: white;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* navbar*/
+
+.navbar {
+  background-color: rgb(162, 70, 190);
+  width: 100%;
+  z-index: 10; 
+  margin-bottom: 30px;
+  position: fixed;
+}
+
+.navbar-brand {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  color: #ffffffc4;
+  font-size: 24px;
+  transition: color 0.3s;
+  margin-left: 0;
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s; 
+  font-size: 20px;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+
+
+
+
+
+/* hero */
+
+.hero-section {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(hero/hero-bg.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .hero-image img.larger-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+.hero-text {
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Styling for Hero Text */
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  letter-spacing: 3px;
+  
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+ 
+}
+
+.hero-text p {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: #d3d3d3;
+  line-height: 1.6;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-content {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Section */
+
+.portfolio-section {
+  min-height: 100vh; 
+  padding: 50px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+/* Portfolio Title */
+.portfolio-title {
+  cursor: pointer;
+}
+
+
+/* Portfolio Heading */
+.portfolio-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333333;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.portfolio-item h3 {
+  font-size: 1.5rem;
+  color: #861a9fc4;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.portfolio-item p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item h3:hover {
+  color: #861a9fc4;
+}
+
+.space-exp, .runeterra, .coven {
+  color: #861a9fc4 ;
+  font-weight: bold;
+}
+
+/* Contact Form Section */
+#contact {
+  min-height: 100vh; 
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+/* Form Styles */
+.form-group label {
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #861a9fc4;
+  border-color: #861a9fc4;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #861a9fc4;
+  border-color: #861a9fc4;
+}
+
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #861a9fc4;
+  color: white;
+  border-bottom: 1px solid #861a9fc4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+
+
+
+
+/* Portfolio Background Color Change */
+.portfolio-section.bg-change {
+  background-color: #f0f8ff !important;
+}
+
+
+
+
+
+
+
+
